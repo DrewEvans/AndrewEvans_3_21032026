@@ -4,18 +4,36 @@ header {
     align-items: center;
     flex-direction: column;
 
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 6px 7px -3px rgba(0, 0, 0, 0.48);
+        width: 100%;
+
+        .logo-img {
+            margin: 1.2em 1.2em .7em 1.2em;
+        }
+    }
+
     .current-location {
         display: flex;
         justify-content: center;
-        background-color: #f2f2f2;
+        background-color: #e8e8e8;
+        box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.25) inset;
         width: 100%;
 
         i {
-            margin: 1em;
+            color: rgb(87, 87, 87);
+            margin: .75em;
+            margin-right: .25em;
         }
 
         .location-name {
-            margin: 1em;
+            color: rgb(87, 87, 87);
+            font-weight: bold;
+            margin: .75em;
+
         }
     }
 
@@ -24,6 +42,24 @@ header {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        background-color: #f2f2f2;
+        width: 100%;
+
+        h1 {
+            font-size: 1.7em;
+            font-weight: 900;
+            text-align: center;
+            margin: 1em 1em .5em 1em;
+        }
+
+        p {
+            color: #4b4b4b;
+            font-size: 1.2em;
+            font-weight: 300;
+            text-align: center;
+            margin: 0 .2em 1.25em .2em;
+
+        }
     }
 
 }
