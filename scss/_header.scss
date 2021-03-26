@@ -60,6 +60,22 @@ header {
             margin: 0 .2em 1.25em .2em;
 
         }
+
+        a {
+            text-decoration: none;
+            display: flex;
+            background: rgb(255, 121, 218);
+            background: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+            border-radius: 30px;
+            box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+            margin-bottom: 2em;
+
+            span {
+                font-weight: 500 bold;
+                color: white;
+                margin: 1em 1.2em;
+            }
+        }
     }
 
 }
