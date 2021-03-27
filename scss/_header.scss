@@ -1,11 +1,5 @@
 @import './variables';
-
-@mixin flexCenter($direction) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
-}
+@import './functions';
 
 
 header {
@@ -79,7 +73,7 @@ header {
 
             span {
                 font-weight: 500 bold;
-                color: white;
+                color: whitesmoke;
                 margin: 1em 1.2em;
             }
         }

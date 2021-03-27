@@ -1,0 +1,30 @@
+@import './variables';
+@import './functions';
+
+
+.functionality {
+    @include flexCenter(column);
+}
+
+.user-steps {
+    @include flexCenter(none);
+
+    .user-step {
+        @include flexCenter(none);
+        background-color: #f2f2f2;
+
+        .step-number {
+            color: whitesmoke;
+            font-weight: 300;
+            @include flexCenter(none);
+            background-color: $primary-color;
+            width: 20px;
+            height: auto;
+            border-radius: 20px
+        }
+    }
+
+    .step-information {
+        @include flexCenter(none);
+    }
+}
