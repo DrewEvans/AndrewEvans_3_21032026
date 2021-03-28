@@ -4,11 +4,10 @@
 
 .functionality {
     @include flexCenter(column);
-    margin: 2em;
+    margin: 2em .5em;
 
     .functionality-header {
-        @include flexCenter(none);
-        align-self: flex-start;
+        width: 300px;
         margin: .6em;
     }
 
@@ -16,7 +15,7 @@
 
         .user-step {
             @include flexCenter(none);
-            width: 275px;
+            width: 300px;
             margin: .5em;
             border-radius: 15px;
             background-color: #f2f2f2;
