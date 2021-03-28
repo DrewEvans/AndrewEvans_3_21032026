@@ -81,8 +81,8 @@ main {
                         -webkit-text-stroke-color: black;
                         transition-duration: 200ms;
 
-                        &:hover {
-                            padding-top: .25em;
+                        &:active {
+                            margin: .1em;
                             -webkit-text-stroke-width: .1px;
                             -webkit-text-stroke-color: transparent;
                             background: linear-gradient(to bottom, $primary-color 0%, $secondary-color 100%);
