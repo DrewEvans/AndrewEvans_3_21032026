@@ -12,16 +12,87 @@ main {
         margin: 2em .5em;
 
         .restaurant-header {
-            width: 300px;
-            margin: .6em;
+            width: 340px;
+            margin: 1.5em .75em;
+
         }
 
         .restaurant-card {
             @include flexCenter(column);
-            height: 250px;
+            height: 300px;
+            width: 340px;
             background-color: white;
             border-radius: 15px;
-            margin: 2em;
+            margin: .75em;
+            box-shadow: 0px 7px 11px 3px rgba(0, 0, 0, 0.15);
+            transition-duration: 200ms;
+
+            &:hover {
+                box-shadow: 0px 7px 11px 3px rgba(0, 0, 0, 0.2);
+            }
+
+            .restaurant-img {
+                height: 245px;
+
+                img {
+
+                    object-fit: cover;
+                    width: 100%;
+                    height: 95%;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                }
+
+                .tags {
+                    display: flex;
+                    justify-content: center;
+                    width: 80px;
+                    background-color: #99FF99;
+                    border-radius: 2px;
+                    transform: translate(250px, -225px);
+
+                    span {
+                        font-weight: 500;
+                        color: #004c00;
+                        padding: .2em
+                    }
+                }
+            }
+
+            .details-container {
+                @include flexCenter(none);
+                justify-content: space-between;
+                width: 340px;
+
+                .restaurant-details {
+                    @include flexCenter(column);
+                    align-items: flex-start;
+                    padding-left: .75em;
+                    margin-bottom: 1em;
+                }
+
+                .user-favourites {
+                    padding-right: 2em;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        -webkit-text-stroke-width: 1px;
+                        -webkit-text-stroke-color: black;
+                        transition-duration: 200ms;
+
+                        &:hover {
+                            padding-top: .25em;
+                            -webkit-text-stroke-width: .1px;
+                            -webkit-text-stroke-color: transparent;
+                            background: linear-gradient(to bottom, $primary-color 0%, $secondary-color 100%);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
+            }
         }
     }
 }
