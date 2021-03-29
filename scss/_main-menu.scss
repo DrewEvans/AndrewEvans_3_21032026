@@ -2,5 +2,151 @@
 @import './functions';
 
 .menu-container {
-    background-color: #f2f2f2;
+    @include flexCenter(column);
+    position: relative;
+    background-color: #e8e8e8;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1em;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    z-index: 1;
+
+
+
+    .header-container {
+        @include flexCenter(none);
+        width: 345px;
+        justify-content: space-between;
+        margin: 1.5em 1.5em 0 1.5em;
+
+        .restaurant-title {
+            font-family: 'shrikhand', 'sans-serif';
+        }
+
+        .user-favourites {
+
+            a {
+                text-decoration: none;
+                color: white;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: black;
+                transition-duration: 200ms;
+
+                &:active {
+                    margin: .1em;
+                    -webkit-text-stroke-width: .1px;
+                    -webkit-text-stroke-color: transparent;
+                    background: linear-gradient(to bottom, $primary-color 0%, $secondary-color 100%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+
+    .meal-type {
+        @include flexCenter(column);
+        align-items: flex-start;
+        width: 345px;
+        margin: .5em 0;
+        margin-top: 2em;
+
+        h2 {
+            font-size: 1em;
+            font-weight: 300;
+        }
+
+        .underline {
+            width: 3em;
+            border-bottom: 3px solid $tertiary-color;
+        }
+    }
+
+    .item-select {
+        color: black;
+        text-decoration: none;
+
+    }
+
+    .meal-container {
+        @include flexCenter(none);
+        justify-content: space-between;
+        background-color: white;
+        margin: .5em 0;
+        width: 345px;
+        height: 60px;
+        border-radius: 15px;
+        box-shadow: 0px 7px 11px 3px rgba(0, 0, 0, 0.15);
+
+        .meal {
+            @include flexCenter(column);
+            width: 100%;
+            align-items: flex-start;
+            margin-left: .3em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            h3 {
+                font-size: 1.1em;
+                padding: .1em;
+            }
+
+            p {
+                font-size: .90em;
+                padding: .1em;
+            }
+        }
+
+        .price {
+            align-self: auto;
+            margin-right: 1em;
+            font-weight: 500;
+            color: #2b2b2b;
+        }
+
+        .hidden-check {
+            display: none;
+            visibility: hidden;
+        }
+
+        &:hover>.hidden-check {
+            @include flexCenter(none);
+            visibility: visible;
+            background-color: $tertiary-color;
+            width: 20%;
+            height: 60px;
+            margin: 0;
+            border-bottom-right-radius: 13px;
+            border-top-right-radius: 13px;
+
+            span {
+
+                @include flexCenter(none);
+                background-color: white;
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                color: $tertiary-color;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.checkout-btn {
+    @include primaryBtn;
+    width: 210px;
+    margin-top: 1.5em;
+
+    &:hover {
+        @include primaryBtnHover
+    }
+
+    span {
+        @include primaryBtnFont
+    }
+}
 }
