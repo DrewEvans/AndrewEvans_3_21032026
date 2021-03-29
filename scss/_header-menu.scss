@@ -1,0 +1,42 @@
+@import './variables';
+@import './functions';
+
+header {
+    .logo-container {
+        z-index: 2;
+        width: 100%;
+        background-color: white;
+
+        .center-logo {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            margin: 0 .5em;
+            width: 320px;
+
+            span {
+                display: inline-flex;
+
+
+                .back-btn {
+                    color: black;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    .restaurant-header-container {
+        @include flexCenter(none);
+        width: 370px;
+        height: 300px;
+
+        img {
+            display: flex;
+            object-fit: cover;
+            width: 150%;
+            height: 110%;
+            z-index: 1;
+        }
+    }
+}
