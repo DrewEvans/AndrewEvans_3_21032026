@@ -6,7 +6,6 @@ footer {
     @include flexCenter(none);
     width: 100%;
     background-color: #0a0a0a;
-    margin-top: 2em;
 
     .nav-footer {
         @include flexCenter(column);
@@ -36,7 +35,7 @@ footer {
                 }
 
                 &:hover {
-                    text-decoration: underline;
+                    font-weight: 500;
                 }
             }
         }
