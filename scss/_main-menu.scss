@@ -28,12 +28,12 @@
 
             a {
                 text-decoration: none;
-                color: white;
+                color: transparent;
                 -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: black;
-                transition-duration: 200ms;
+                transition-duration: 400ms;
 
-                &:active {
+                &:hover {
                     margin: .1em;
                     -webkit-text-stroke-width: .1px;
                     -webkit-text-stroke-color: transparent;
@@ -79,15 +79,17 @@
         height: 60px;
         border-radius: 15px;
         box-shadow: 0px 7px 11px 3px rgba(0, 0, 0, 0.15);
+        position: relative;
+
 
         .meal {
             @include flexCenter(column);
             width: 100%;
             align-items: flex-start;
             margin-left: .3em;
+            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;
 
             h3 {
                 font-size: 1.1em;
@@ -101,7 +103,7 @@
         }
 
         .price {
-            align-self: auto;
+            display: flex;
             margin-right: 1em;
             font-weight: 500;
             color: #2b2b2b;
@@ -123,7 +125,6 @@
             border-top-right-radius: 13px;
 
             span {
-
                 @include flexCenter(none);
                 background-color: white;
                 width: 26px;
@@ -148,5 +149,4 @@
     span {
         @include primaryBtnFont
     }
-}
 }

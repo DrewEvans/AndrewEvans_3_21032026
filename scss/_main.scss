@@ -81,11 +81,12 @@ main {
                         color: white;
                         -webkit-text-stroke-width: 1px;
                         -webkit-text-stroke-color: black;
-                        transition-duration: 200ms;
+                        transition-duration: 400ms;
 
-                        &:active {
-                            margin: .1em;
+                        &:hover {
+                            padding: .1em;
                             -webkit-text-stroke-width: .1px;
+
                             -webkit-text-stroke-color: transparent;
                             background: linear-gradient(to bottom, $primary-color 0%, $secondary-color 100%);
                             -webkit-background-clip: text;
