@@ -9,11 +9,12 @@ main {
 
     .restaurant-container {
         @include flexCenter(column);
-        margin: 2em .5em;
+        margin: 2em .5em 0em .5em;
+
 
         .restaurant-header {
             width: 340px;
-            margin: 1.5em .75em;
+            margin: 1.2em .75em .5em .75em;
 
         }
 

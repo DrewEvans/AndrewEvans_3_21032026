@@ -3,9 +3,10 @@
 
 
 footer {
-    width: 100%;
     @include flexCenter(none);
+    width: 100%;
     background-color: #0a0a0a;
+    margin-top: 2em;
 
     .nav-footer {
         @include flexCenter(column);
@@ -15,6 +16,7 @@ footer {
 
         img {
             height: 22px;
+            margin-bottom: .75em;
             transform: translateX(5px);
         }
 
