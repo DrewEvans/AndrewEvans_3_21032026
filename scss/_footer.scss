@@ -1,0 +1,42 @@
+@import './variables';
+@import './functions';
+
+
+footer {
+    width: 100%;
+    @include flexCenter(none);
+    background-color: #0a0a0a;
+
+    .nav-footer {
+        @include flexCenter(column);
+        align-items: flex-start;
+        margin: 1.5em;
+        width: 340px;
+
+        img {
+            height: 22px;
+            transform: translateX(5px);
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                margin: .5em;
+
+                span {
+                    margin-right: .5em;
+                }
+
+                .nav-links {
+                    text-decoration: none;
+                    color: whitesmoke;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
