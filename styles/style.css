@@ -22,8 +22,8 @@
   background-color: whitesmoke;
   z-index: 9999;
   opacity: 1;
-  -webkit-transition: all 3s;
-  transition: all 3s;
+  -webkit-transition: all 2s cubic-bezier(1, -0.2, 1, -0.75);
+  transition: all 2s cubic-bezier(1, -0.2, 1, -0.75);
 }
 
 .loading-wrapper .upper-loader {
@@ -34,8 +34,8 @@
   border-radius: 15px;
   -webkit-transform: translateX(-30px);
           transform: translateX(-30px);
-  -webkit-animation: slideinTop 2s ease-in-out 0s infinite normal none;
-          animation: slideinTop 2s ease-in-out 0s infinite normal none;
+  -webkit-animation: slideinTop 1s ease-in-out 0s infinite normal none;
+          animation: slideinTop 1s ease-in-out 0s infinite normal none;
 }
 
 @-webkit-keyframes slideinTop {
@@ -91,8 +91,8 @@
   border-radius: 15px;
   -webkit-transform: translateX(13px);
           transform: translateX(13px);
-  -webkit-animation: slideinCenterLeft 2s linear 0s infinite normal none;
-          animation: slideinCenterLeft 2s linear 0s infinite normal none;
+  -webkit-animation: slideinCenterLeft 1s linear 0s infinite normal none;
+          animation: slideinCenterLeft 1s linear 0s infinite normal none;
 }
 
 @-webkit-keyframes slideinCenterLeft {
@@ -141,8 +141,8 @@
   border-radius: 15px;
   -webkit-transform: translateX(-13px);
           transform: translateX(-13px);
-  -webkit-animation: slideinCenterRight 2s linear 0s infinite normal none;
-          animation: slideinCenterRight 2s linear 0s infinite normal none;
+  -webkit-animation: slideinCenterRight 1s linear 0s infinite normal none;
+          animation: slideinCenterRight 1s linear 0s infinite normal none;
 }
 
 @-webkit-keyframes slideinCenterRight {
@@ -191,8 +191,8 @@
   border-radius: 15px;
   -webkit-transform: translateX(30px);
           transform: translateX(30px);
-  -webkit-animation: slideinbottom 2s ease-in-out 0s infinite normal none;
-          animation: slideinbottom 2s ease-in-out 0s infinite normal none;
+  -webkit-animation: slideinbottom 1s ease-in-out 0s infinite normal none;
+          animation: slideinbottom 1s ease-in-out 0s infinite normal none;
 }
 
 @-webkit-keyframes slideinbottom {
@@ -243,6 +243,8 @@
 
 .loading-finished {
   opacity: 0;
+  visibility: hidden;
+  display: hidden;
   pointer-events: none;
 }
 

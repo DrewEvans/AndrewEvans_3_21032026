@@ -13,8 +13,7 @@
     background-color: whitesmoke;
     z-index: 9999;
     opacity: 1;
-    transition: all 3s;
-
+    transition: all 2s cubic-bezier(1, -0.2, 1, -0.75);
 
     .upper-loader {
         background-color: $primary-color;
@@ -23,7 +22,7 @@
         margin: .2em;
         border-radius: 15px;
         transform: translateX(-30px);
-        animation: slideinTop 2s ease-in-out 0s infinite normal none;
+        animation: slideinTop 1s ease-in-out 0s infinite normal none;
 
 
         @keyframes slideinTop {
@@ -46,6 +45,7 @@
 
             100% {
                 transform: translateY(70px) rotate(180deg);
+
             }
         }
     }
@@ -56,7 +56,7 @@
         height: 8px;
         border-radius: 15px;
         transform: translateX(13px);
-        animation: slideinCenterLeft 2s linear 0s infinite normal none;
+        animation: slideinCenterLeft 1s linear 0s infinite normal none;
 
         @keyframes slideinCenterLeft {
             0% {
@@ -73,6 +73,7 @@
 
             100% {
                 transform: translateX(0px) rotate(360deg);
+
             }
         }
     }
@@ -84,7 +85,7 @@
         margin: .2em;
         border-radius: 15px;
         transform: translateX(-13px);
-        animation: slideinCenterRight 2s linear 0s infinite normal none;
+        animation: slideinCenterRight 1s linear 0s infinite normal none;
 
         @keyframes slideinCenterRight {
             0% {
@@ -101,6 +102,7 @@
 
             100% {
                 transform: translateX(0px) rotate(-360deg);
+
             }
         }
     }
@@ -112,7 +114,7 @@
         margin: .2em;
         border-radius: 15px;
         transform: translateX(30px);
-        animation: slideinbottom 2s ease-in-out 0s infinite normal none;
+        animation: slideinbottom 1s ease-in-out 0s infinite normal none;
 
 
         @keyframes slideinbottom {
@@ -136,6 +138,7 @@
 
             100% {
                 transform: translateY(-70px) rotate(-180deg);
+
             }
         }
     }
@@ -143,5 +146,7 @@
 
 .loading-finished {
     opacity: 0;
+    visibility: hidden;
+    display: hidden;
     pointer-events: none;
 }
