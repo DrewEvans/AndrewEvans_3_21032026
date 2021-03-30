@@ -1,6 +1,5 @@
 @import './variables';
 @import './functions';
-@import '/scss/loading-screen';
 
 header {
     @include flexCenter(column);
