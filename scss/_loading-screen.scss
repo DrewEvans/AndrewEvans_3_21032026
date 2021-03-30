@@ -1,0 +1,141 @@
+@import './variables';
+@import './functions';
+
+.loading-wrapper {
+
+    @include flexCenter(column);
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: whitesmoke;
+    z-index: 9999;
+    opacity: 1;
+
+
+    .upper-loader {
+        background-color: $primary-color;
+        width: 100px;
+        height: 8px;
+        margin: .2em;
+        border-radius: 15px;
+        transform: translateX(-30px);
+        animation: slideinTop 1.5s ease-in-out 0s 2 normal none;
+
+
+        @keyframes slideinTop {
+            0% {
+                transform: translateY(-30px);
+            }
+
+            25% {
+                transform: translateY(0px);
+
+            }
+
+            50% {
+                transform: translateX(30px);
+            }
+
+            75% {
+                transform: translateX(50px);
+            }
+
+            100% {
+                transform: translateY(70px) rotate(180deg);
+            }
+        }
+    }
+
+    .center-left-loader {
+        background-color: $secondary-color;
+        width: 50px;
+        height: 8px;
+        border-radius: 15px;
+        transform: translateX(13px);
+        animation: slideinCenterLeft 1s linear 0s 2 normal none;
+
+        @keyframes slideinCenterLeft {
+            0% {
+                transform: translateX(13px);
+            }
+
+            50% {
+                transform: translateX(-13px);
+            }
+
+            75% {
+                transform: translateX(13px);
+            }
+
+            100% {
+                transform: translateX(0px) rotate(360deg);
+            }
+        }
+    }
+
+    .center-right-loader {
+        background-color: $tertiary-color;
+        width: 50px;
+        height: 8px;
+        margin: .2em;
+        border-radius: 15px;
+        transform: translateX(-13px);
+        animation: slideinCenterRight 1s linear 0s 2 normal none;
+
+        @keyframes slideinCenterRight {
+            0% {
+                transform: translateX(-13px);
+            }
+
+            50% {
+                transform: translateX(13px);
+            }
+
+            75% {
+                transform: translateX(-13px);
+            }
+
+            100% {
+                transform: translateX(0px) rotate(-360deg);
+            }
+        }
+    }
+
+    .bottom-loader {
+        background-color: $primary-color;
+        width: 100px;
+        height: 8px;
+        margin: .2em;
+        border-radius: 15px;
+        transform: translateX(30px);
+        animation: slideinbottom 1.5s ease-in-out 0s 2 normal none;
+
+
+        @keyframes slideinbottom {
+            0% {
+                transform: translateY(30px);
+
+            }
+
+            25% {
+                transform: translateY(0px);
+
+            }
+
+            50% {
+                transform: translateX(-30px);
+            }
+
+            75% {
+                transform: translateX(-50px);
+            }
+
+            100% {
+                transform: translateY(-70px) rotate(-180deg);
+            }
+        }
+    }
+}
