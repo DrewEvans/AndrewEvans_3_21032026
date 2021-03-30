@@ -13,6 +13,7 @@
     background-color: whitesmoke;
     z-index: 9999;
     opacity: 1;
+    transition: all 3s;
 
 
     .upper-loader {
@@ -22,7 +23,7 @@
         margin: .2em;
         border-radius: 15px;
         transform: translateX(-30px);
-        animation: slideinTop 1.5s ease-in-out 0s 2 normal none;
+        animation: slideinTop 2s ease-in-out 0s infinite normal none;
 
 
         @keyframes slideinTop {
@@ -55,7 +56,7 @@
         height: 8px;
         border-radius: 15px;
         transform: translateX(13px);
-        animation: slideinCenterLeft 1s linear 0s 2 normal none;
+        animation: slideinCenterLeft 2s linear 0s infinite normal none;
 
         @keyframes slideinCenterLeft {
             0% {
@@ -83,7 +84,7 @@
         margin: .2em;
         border-radius: 15px;
         transform: translateX(-13px);
-        animation: slideinCenterRight 1s linear 0s 2 normal none;
+        animation: slideinCenterRight 2s linear 0s infinite normal none;
 
         @keyframes slideinCenterRight {
             0% {
@@ -111,7 +112,7 @@
         margin: .2em;
         border-radius: 15px;
         transform: translateX(30px);
-        animation: slideinbottom 1.5s ease-in-out 0s 2 normal none;
+        animation: slideinbottom 2s ease-in-out 0s infinite normal none;
 
 
         @keyframes slideinbottom {
@@ -138,4 +139,9 @@
             }
         }
     }
+}
+
+.loading-finished {
+    opacity: 0;
+    pointer-events: none;
 }
