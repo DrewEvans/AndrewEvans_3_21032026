@@ -80,6 +80,19 @@
         border-radius: 15px;
         box-shadow: 0px 7px 11px 3px rgba(0, 0, 0, 0.15);
         position: relative;
+        animation: fadein 1000ms linear 0s 1 normal none;
+
+        @keyframes fadein {
+            from {
+                transform: translateY(3px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
 
 
         .meal {
@@ -132,6 +145,17 @@
                 border-radius: 50%;
                 color: $tertiary-color;
                 font-weight: bold;
+                animation: rotate-center 0.3s linear both;
+
+                @keyframes rotate-center {
+                    from {
+                        transform: rotate(0);
+                    }
+
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
             }
         }
     }
