@@ -96,7 +96,7 @@
 
 
         .meal {
-            @include flexCenter(column);
+            display: inline-block;
             width: 100%;
             align-items: flex-start;
             margin-left: .3em;
@@ -107,11 +107,17 @@
             h3 {
                 font-size: 1.1em;
                 padding: .1em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             p {
                 font-size: .90em;
                 padding: .1em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
 
