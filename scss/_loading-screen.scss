@@ -11,9 +11,19 @@
     right: 0;
     bottom: 0;
     background-color: whitesmoke;
-    z-index: 9999;
-    opacity: 1;
+    opacity: 0;
+    animation: slidein 1s ease 1s backwards;
+    transition: visibility 0s, opacity 0.5s linear;
 
+    @keyframes slidein {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
 
     .upper-loader {
         background-color: $primary-color;
