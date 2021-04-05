@@ -57,4 +57,27 @@
             }
         }
     }
+
+    @include phone {
+        .functionality-header {
+            width: 250px;
+        }
+
+        .user-steps {
+            width: 250px;
+            margin: .2em 0;
+
+            .user-step {
+                width: 240px;
+            }
+
+            .step-information {
+                width: 210px;
+
+                .step-explanation {
+                    margin: 0 .5em;
+                }
+            }
+        }
+    }
 }

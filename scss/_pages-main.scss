@@ -25,7 +25,6 @@
         }
 
         .user-favourites {
-
             a {
                 text-decoration: none;
                 color: transparent;
@@ -131,6 +130,7 @@
         .hidden-check {
             display: none;
             visibility: hidden;
+            transform: translateX(5px);
         }
 
         &:hover>.hidden-check {
@@ -165,18 +165,76 @@
             }
         }
     }
-}
 
-.checkout-btn {
-    @include primaryBtn;
-    width: 210px;
-    margin-top: 1.5em;
+    @include phone {
 
-    &:hover {
-        @include primaryBtnHover
+
+        .header-container {
+            width: 275px;
+            margin: 1em 1em 0 1em;
+        }
+
+        .meal-type {
+            @include flexCenter(column);
+            align-items: flex-start;
+            width: 275px;
+            margin: .5em 0;
+            margin-top: 1em;
+
+            h2 {
+                font-size: 1em;
+                font-weight: 300;
+            }
+
+
+        }
+
+        .meal-container {
+            width: 275px;
+            margin: .35em 0;
+
+            .meal {
+                display: inline-block;
+                width: 100%;
+                align-items: flex-start;
+                margin-left: .3em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                h3 {
+                    font-size: .9em;
+                    padding: .1em;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                p {
+                    font-size: .7em;
+                    padding: .1em;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+
     }
 
-    span {
-        @include primaryBtnFont
+    .checkout-btn {
+        @include primaryBtn;
+        width: 210px;
+        margin-top: 1.5em;
+
+        &:hover {
+            @include primaryBtnHover
+        }
+
+        span {
+            @include primaryBtnFont
+        }
     }
+
+
 }
