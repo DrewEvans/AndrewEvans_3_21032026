@@ -439,7 +439,7 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
   padding-right: 2em;
 }
 
-main .restaurant-container .restaurant-card .details-container .user-favourites a {
+main .restaurant-container .restaurant-card .details-container .user-favourites span {
   text-decoration: none;
   color: white;
   -webkit-text-stroke-width: 1px;
@@ -447,7 +447,7 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
   transition-duration: 400ms;
 }
 
-main .restaurant-container .restaurant-card .details-container .user-favourites a:hover {
+main .restaurant-container .restaurant-card .details-container .user-favourites span:hover {
   padding: .1em;
   -webkit-text-stroke-width: .1px;
   -webkit-text-stroke-color: transparent;
