@@ -166,8 +166,21 @@
         }
     }
 
-    @include phone {
+    .checkout-btn {
+        @include primaryBtn;
+        width: 210px;
+        margin-top: 1.5em;
 
+        &:hover {
+            @include primaryBtnHover
+        }
+
+        span {
+            @include primaryBtnFont
+        }
+    }
+
+    @include phone {
 
         .header-container {
             width: 275px;
@@ -183,10 +196,7 @@
 
             h2 {
                 font-size: 1em;
-                font-weight: 300;
             }
-
-
         }
 
         .meal-container {
@@ -220,21 +230,10 @@
             }
         }
 
-    }
-
-    .checkout-btn {
-        @include primaryBtn;
-        width: 210px;
-        margin-top: 1.5em;
-
-        &:hover {
-            @include primaryBtnHover
-        }
-
-        span {
-            @include primaryBtnFont
+        .checkout-btn {
+            @include primaryBtn;
+            width: 210px;
+            margin: .5em;
         }
     }
-
-
 }

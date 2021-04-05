@@ -653,6 +653,31 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
   }
 }
 
+.menu-container .checkout-btn {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  background: #ff79da;
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+  margin-bottom: 3em;
+  transition-duration: 200ms;
+  width: 210px;
+  margin-top: 1.5em;
+}
+
+.menu-container .checkout-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 3px 20px 1px rgba(0, 0, 0, 0.5);
+}
+
+.menu-container .checkout-btn span {
+  font-weight: 500 bold;
+  color: whitesmoke;
+  margin: 1em 1.2em;
+}
+
 @media only screen and (max-width: 375px) {
   .menu-container .header-container {
     width: 275px;
@@ -670,7 +695,6 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
   }
   .menu-container .meal-type h2 {
     font-size: 1em;
-    font-weight: 300;
   }
   .menu-container .meal-container {
     width: 275px;
@@ -699,31 +723,19 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
     overflow: hidden;
     text-overflow: ellipsis;
   }
-}
-
-.menu-container .checkout-btn {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  background: #ff79da;
-  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-  border-radius: 30px;
-  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
-  margin-bottom: 3em;
-  transition-duration: 200ms;
-  width: 210px;
-  margin-top: 1.5em;
-}
-
-.menu-container .checkout-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0px 3px 20px 1px rgba(0, 0, 0, 0.5);
-}
-
-.menu-container .checkout-btn span {
-  font-weight: 500 bold;
-  color: whitesmoke;
-  margin: 1em 1.2em;
+  .menu-container .checkout-btn {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background: #ff79da;
+    background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+    margin-bottom: 3em;
+    transition-duration: 200ms;
+    width: 210px;
+    margin: .5em;
+  }
 }
 
 footer {
