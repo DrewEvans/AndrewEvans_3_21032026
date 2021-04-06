@@ -17,6 +17,7 @@
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -36,15 +37,19 @@
   0% {
     transform: translateY(-30px);
   }
+
   25% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateX(30px);
   }
+
   75% {
     transform: translateX(50px);
   }
+
   100% {
     transform: translateY(70px) rotate(180deg);
   }
@@ -63,12 +68,15 @@
   0% {
     transform: translateX(13px);
   }
+
   50% {
     transform: translateX(-13px);
   }
+
   75% {
     transform: translateX(13px);
   }
+
   100% {
     transform: translateX(0px) rotate(360deg);
   }
@@ -88,12 +96,15 @@
   0% {
     transform: translateX(-13px);
   }
+
   50% {
     transform: translateX(13px);
   }
+
   75% {
     transform: translateX(-13px);
   }
+
   100% {
     transform: translateX(0px) rotate(-360deg);
   }
@@ -113,15 +124,19 @@
   0% {
     transform: translateY(30px);
   }
+
   25% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateX(-30px);
   }
+
   75% {
     transform: translateX(-50px);
   }
+
   100% {
     transform: translateY(-70px) rotate(-180deg);
   }
@@ -335,16 +350,20 @@ header .restaurant-header-container img {
   .functionality .functionality-header {
     width: 250px;
   }
+
   .functionality .user-steps {
     width: 250px;
     margin: .2em 0;
   }
+
   .functionality .user-steps .user-step {
     width: 240px;
   }
+
   .functionality .user-steps .step-information {
     width: 210px;
   }
+
   .functionality .user-steps .step-information .step-explanation {
     margin: 0 .5em;
   }
@@ -462,16 +481,20 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
     width: 240px;
     margin: 1.2em .75em .5em .75em;
   }
+
   main .restaurant-container .restaurant-card {
     height: 200px;
     width: 240px;
   }
+
   main .restaurant-container .restaurant-card .restaurant-img {
     height: 145px;
   }
+
   main .restaurant-container .restaurant-card .restaurant-img .tags {
     transform: translate(150px, -125px);
   }
+
   main .restaurant-container .restaurant-card .details-container {
     width: 240px;
   }
@@ -571,6 +594,7 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
     transform: translateY(3px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0px);
     opacity: 1;
@@ -616,7 +640,7 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
   transform: translateX(5px);
 }
 
-.menu-container .meal-container:hover > .hidden-check {
+.menu-container .meal-container:hover>.hidden-check {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -630,7 +654,7 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
   border-top-right-radius: 13px;
 }
 
-.menu-container .meal-container:hover > .hidden-check span {
+.menu-container .meal-container:hover>.hidden-check span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -648,6 +672,7 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
   from {
     transform: rotate(0);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -683,6 +708,7 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
     width: 275px;
     margin: 1em 1em 0 1em;
   }
+
   .menu-container .meal-type {
     display: flex;
     justify-content: center;
@@ -693,13 +719,16 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
     margin: .5em 0;
     margin-top: 1em;
   }
+
   .menu-container .meal-type h2 {
     font-size: 1em;
   }
+
   .menu-container .meal-container {
     width: 275px;
     margin: .35em 0;
   }
+
   .menu-container .meal-container .meal {
     display: inline-block;
     width: 100%;
@@ -709,6 +738,7 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
   .menu-container .meal-container .meal h3 {
     font-size: .9em;
     padding: .1em;
@@ -716,6 +746,7 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
   .menu-container .meal-container .meal p {
     font-size: .7em;
     padding: .1em;
@@ -723,6 +754,7 @@ main .restaurant-container .restaurant-card .details-container .user-favourites 
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
   .menu-container .checkout-btn {
     text-decoration: none;
     display: flex;
