@@ -6,8 +6,8 @@
     @include flexCenter(column);
     flex-wrap: wrap;
     position: absolute;
-    top: 45%;
-    left: 45%;
+    top: 35%;
+    left: 46%;
     background-color: transparent;
     opacity: 0;
     animation: slidein 1s ease 1s backwards;
@@ -145,5 +145,13 @@
                 transform: translateY(-70px) rotate(-180deg);
             }
         }
+    }
+
+}
+
+@include phone {
+    .loading-wrapper {
+        top: 45%;
+        left: 40%;
     }
 }
